@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <title>Primers Testing</title>
+    <style>
+      ul {
+        list-style-type: decimal;
+      }
+      li {
+        margin: 20px 0;
+      }
+
+      .row p {
+        margin: 20px 0;
+      }
+      .col-3 textarea {
+        height: 23px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 class="text-danger my-5">Primers Testing:</h1>
+
+        <p>
+          Primers are designed to bind to a specific region of a longer DNA
+          template strand and are typically 18-25 nucleotides long.
+        </p>
+
+        <h4 class="my-4">Primers Creating:</h4>
+
+        <p>The Primers have some properties that determine them, such as:</p>
+
+        <ul class="my-3">
+          <li>
+            Alias names for primers can enhance communication and understanding
+            between scientists and researchers with varying backgrounds or
+            familiarity levels, and we can add and modify them for any primer in
+            the platform.
+          </li>
+          <li>
+            GC content refers to the percentage of nucleotides in a DNA and can
+            affect their melting temperature (Tm) and specificity, and it is
+            calculated automatically after adding the primer sequence.
+          </li>
+          <li>Melting temperature.</li>
+          <li>Length of the sequence.</li>
+        </ul>
+
+        <p>
+          We can create or import primers in several ways around the platform.
+        </p>
+
+        <h3 class="text-primary my-5">Creating new Primer :</h3>
+      </div>
+      <div class="row my-5">
+        <div class="col-7">
+          <p>Navigate to the Dashboard.</p>
+
+          <p>Move to the Primers tab.</p>
+
+          <p>
+            Here, you will see the previously created primers and their
+            properties as records in a table.
+          </p>
+
+          <p>Press the new button.</p>
+
+          <p>
+            Enter an alias name and test its validity (it should accept every
+            character without a problem, and we can't have the same alias name
+            twice for every primer).
+          </p>
+
+          <p>Add some description for the primer.</p>
+
+          <p>
+            Add any DNA sequence and ensure that the table only accepts the four
+            characters for DNA sequence.
+          </p>
+
+          <p>Click on the create button when finished editing.</p>
+
+          <p>
+            A little blue pop-on window should appear in the right bottom corner
+            saying "successfully created."
+          </p>
+
+          <p>
+            Locate the created primer in the table and press on the small arrow
+            on the left of its record to expand its details.
+          </p>
+
+          <p>
+            Make sure that its details match the previously entered details and
+            have not been corrupted.
+          </p>
+        </div>
+        <div class="col-1">
+          <p><input type="checkbox" name="" id="" class="succeedBtn" /></p>
+          <p><input type="checkbox" name="" id="" class="succeedBtn" /></p>
+          <p><input type="checkbox" name="" id="" class="succeedBtn" /></p>
+          <p><input type="checkbox" name="" id="" class="succeedBtn" /></p>
+          <p><input type="checkbox" name="" id="" class="succeedBtn" /></p>
+          <p><input type="checkbox" name="" id="" class="succeedBtn" /></p>
+          <p><input type="checkbox" name="" id="" class="succeedBtn" /></p>
+          <p><input type="checkbox" name="" id="" class="succeedBtn" /></p>
+          <p><input type="checkbox" name="" id="" class="succeedBtn" /></p>
+          <p><input type="checkbox" name="" id="" class="succeedBtn" /></p>
+          <p><input type="checkbox" name="" id="" class="succeedBtn" /></p>
+          <p><input type="checkbox" name="" id="" class="succeedBtn" /></p>
+          <p><input type="checkbox" name="" id="" class="succeedBtn" /></p>
+        </div>
+        <div class="col-1">
+          <p><input type="checkbox" name="" id="" class="failedBtn" /></p>
+          <p><input type="checkbox" name="" id="" class="failedBtn" /></p>
+          <p><input type="checkbox" name="" id="" class="failedBtn" /></p>
+          <p><input type="checkbox" name="" id="" class="failedBtn" /></p>
+          <p><input type="checkbox" name="" id="" class="failedBtn" /></p>
+          <p><input type="checkbox" name="" id="" class="failedBtn" /></p>
+          <p><input type="checkbox" name="" id="" class="failedBtn" /></p>
+          <p><input type="checkbox" name="" id="" class="failedBtn" /></p>
+          <p><input type="checkbox" name="" id="" class="failedBtn" /></p>
+          <p><input type="checkbox" name="" id="" class="failedBtn" /></p>
+          <p><input type="checkbox" name="" id="" class="failedBtn" /></p>
+          <p><input type="checkbox" name="" id="" class="failedBtn" /></p>
+          <p><input type="checkbox" name="" id="" class="failedBtn" /></p>
+        </div>
+        <div class="col-3">
+          <p><textarea name="" id="" cols="" rows="1"></textarea>
+            <input class="d-inline-block" type="file" name="" id="">   </p>
+          <p><textarea name="" id="" cols="" rows="1"></textarea></p>
+          <p><textarea name="" id="" cols="" rows="1"></textarea></p>
+          <p><textarea name="" id="" cols="" rows="1"></textarea></p>
+          <p><textarea name="" id="" cols="" rows="1"></textarea></p>
+          <p><textarea name="" id="" cols="" rows="1"></textarea></p>
+          <p><textarea name="" id="" cols="" rows="1"></textarea></p>
+          <p><textarea name="" id="" cols="" rows="1"></textarea></p>
+          <p><textarea name="" id="" cols="" rows="1"></textarea></p>
+          <p><textarea name="" id="" cols="" rows="1"></textarea></p>
+          <p><textarea name="" id="" cols="" rows="1"></textarea></p>
+          <p><textarea name="" id="" cols="" rows="1"></textarea></p>
+          <p><textarea name="" id="" cols="" rows="1"></textarea></p>
+        </div>
+      </div>
+      <button class="p-3" onclick="calculate()">Check</button>
+      <!-- <button class="p-3" onclick="notCalculate()">test</button> -->
+      <span class="mx-4 border p-2 border-dark">Succeed</span>
+      <span class="mx-4 border p-2 border-dark" id="succeed">%</span>
+      <span class="mx-4 border p-2 border-dark">Failed</span>
+      <span class="mx-4 border p-2 border-dark" id="failed">%</span>
+      <span class="mx-4 border p-2 border-dark">Haven't been tested yet</span>
+      <span class="mx-4 border p-2 border-dark" id="notComplete">%</span>
+      <button
+        class="float-right p-2 m-1 btn-success text-dark rounded-right-left"
+      >
+        Save
+      </button>
+      <input type="file" name="" id="" />
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
