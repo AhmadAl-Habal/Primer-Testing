@@ -13,9 +13,9 @@ let notCompletePercentage = document.querySelector("#notComplete");
 let b;
 let c;
 let d;
-redBar.style.width = "50%"
-greenBar.style.width = "20%";
-greyBar.style.width = "30%";
+redBar.style.width = "0%"
+greenBar.style.width = "0%";
+greyBar.style.width = "100%";
 
 function calculate() {
   b = 0;
