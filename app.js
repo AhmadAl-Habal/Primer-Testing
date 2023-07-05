@@ -1,3 +1,10 @@
+let redBar = document.querySelector("#progress-bar .bar.red");
+let greenBar = document.querySelector("#progress-bar .bar.green");
+let greyBar = document.querySelector("#progress-bar .bar.grey");
+
+
+
+
 let succeedCheckboxes = document.querySelectorAll(".succeedBtn");
 let failedCheckboxes = document.querySelectorAll(".failedBtn");
 let succeedPercentage = document.querySelector("#succeed");
@@ -6,6 +13,9 @@ let notCompletePercentage = document.querySelector("#notComplete");
 let b;
 let c;
 let d;
+redBar.style.width = "50%"
+greenBar.style.width = "20%";
+greyBar.style.width = "30%";
 
 function calculate() {
   b = 0;
@@ -21,8 +31,10 @@ function calculate() {
   let resultFailed = (c * 100) / 13;
   succeedPercentage.innerHTML = resultSucceed.toFixed(1);
   succeedPercentage.innerHTML += "% "
+  greenBar.style.width = `${resultSucceed}%`;
   failedPercentage.innerHTML = resultFailed.toFixed(1);
   failedPercentage.innerHTML += "% "
+  redBar.style.width = `${resultFailed}%`;
  notCalculate()
 }
 let i
@@ -37,4 +49,7 @@ function notCalculate() {
     let notComplete = (d * 100) / 13;
     notCompletePercentage.innerHTML = notComplete.toFixed(1);
     notCompletePercentage.innerHTML += "% ";
+    greyBar.style.width = `${notComplete}%`;
 }
+
+ 
